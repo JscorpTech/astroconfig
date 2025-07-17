@@ -1,4 +1,8 @@
-opts = { noremap = true, silent = true }
+local opts = { noremap = true, silent = true }
+
+
+vim.opt.wrap = false -- bir qatorda davom etadi
+vim.opt.linebreak = true -- so‘z bo‘linmaydi
 
 vim.keymap.set({ "n", "i" }, "<C-s>", "<cmd>w<cr>", { desc = "Save file" })
 
@@ -32,3 +36,6 @@ vim.keymap.set("n", "<A-Down>", ":m .+1<CR>==", opts)
 vim.keymap.set("n", "<C-z>", "u", opts)
 
 vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+
+vim.keymap.set("n", "<C-l>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+
