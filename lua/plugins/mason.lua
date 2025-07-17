@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason
 
@@ -11,17 +11,20 @@ return {
     opts = {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
-        -- install language servers
+        "ast-grep",
+        "black",
+        "blade-formatter",
+        "clangd",
+        "django-template-lsp",
+        "flake8",
+        "gopls",
+        "htmlbeautifier",
+        "intelephense",
+        "isort",
         "lua-language-server",
-
-        -- install formatters
-        "stylua",
-
-        -- install debuggers
-        "debugpy",
-
-        -- install any other package
-        "tree-sitter-cli",
+        "php-cs-fixer",
+        "python-lsp-server",
+        "rust-analyzer",
       },
     },
   },
