@@ -39,3 +39,9 @@ vim.keymap.set("n", "<leader>fg", ":lua require('telescope').extensions.live_gre
 
 vim.keymap.set("n", "<C-l>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 
+
+
+-- Horizontal scrollni Neovim ichida teskari qilib beradi
+vim.keymap.set("n", "<ScrollWheelLeft>", "zl", { noremap = true })
+vim.keymap.set("n", "<ScrollWheelRight>", "zh", { noremap = true })
+
