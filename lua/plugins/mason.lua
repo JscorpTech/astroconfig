@@ -23,7 +23,7 @@ return {
         "isort",
         "lua-language-server",
         "php-cs-fixer",
-        "python-lsp-server",
+        "pyright",
         "rust-analyzer",
       },
     },
